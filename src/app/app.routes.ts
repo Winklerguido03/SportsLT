@@ -30,21 +30,21 @@ export const routes: Routes = [
 
 {
     path:"seccionHombres",
-    loadComponent: ()=> import("../app/components/seccion-hombres/seccion-hombres.component").then(a=>a.SeccionHombresComponent),outlet:"nav",
+    loadComponent: ()=> import("../app/components/seccion-hombres/seccion-hombres.component").then(a=>a.SeccionHombresComponent),
 },
 
 {
     path:"seccionMujeres",
-    loadComponent: ()=> import("../app/components/seccion-mujeres/seccion-mujeres.component").then(a=>a.SeccionMujeresComponent),outlet:"nav",
+    loadComponent: ()=> import("../app/components/seccion-mujeres/seccion-mujeres.component").then(a=>a.SeccionMujeresComponent),
 },
 
 {
     path:"seccionNiños",
-    loadComponent: ()=> import("../app/components/seccion-kids/seccion-kids.component").then(a=>a.SeccionKidsComponent),outlet:"nav",
+    loadComponent: ()=> import("../app/components/seccion-kids/seccion-kids.component").then(a=>a.SeccionKidsComponent),
 },
 
 {
     path:"seccionMarcas",
-    loadComponent: ()=> import("../app/components/seccion-marcas/seccion-marcas.component").then(a=>a.SeccionMarcasComponent),outlet:"nav",
+    loadComponent: ()=> import("../app/components/seccion-marcas/seccion-marcas.component").then(a=>a.SeccionMarcasComponent),
 }
 ];

@@ -1,9 +1,11 @@
-<div class="fondo">
+<div class="contenedorMayor" *ngIf="principalActiva">
+  <div class="fondo">
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
+      <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="5000">
             <a class="imgCarrusel" href="">
-                <img src="../../assets/imgPrincipal/botines.jpg" class="imgCarrusel" alt="...">
+                <img src="../../assets/imgPrincipal/botines.jpg" class="imgCarrusel" alt="..." 
+                routerLink="/">
             </a>
           </div>
           <div class="carousel-item" data-bs-interval="5000">
@@ -12,7 +14,7 @@
             </a>
           </div>
           <div class="carousel-item" data-bs-interval="5000">
-            <a href="">
+            <a href="" routerLink="/seccionRunning">
                 <img src="../../assets/imgPrincipal/run.jpg" class="imgCarrusel" alt="...">
             </a>
           </div>
@@ -48,10 +50,10 @@
   </div>
   <div class="bloquesDeportes">
      <ul class="btnDeportes">
-      <a class="a" href="" routerLink="/seccionFutbol" (click)="ocultarSeccion()">
-            <li class="li">FUTBOL</li>
-            <img src="../../assets/iconosDeportes/futbol.png" alt="iconoFutbol">   
-      </a>
+       <a class="a" href="" routerLink="/seccionFutbol" (click)="ocultarSeccion()">
+         <li class="li">FUTBOL</li>
+         <img src="../../assets/iconosDeportes/futbol.png" alt="iconoFutbol">   
+        </a>
       <a class="a" routerLink="/seccionRunning" (click)="ocultarSeccion()">
           <li class="li">RUNNING</li>
           <img src="../../assets/iconosDeportes/running.png" alt="iconoRunning" >
@@ -59,8 +61,8 @@
       <a class="a" routerLink="/seccionEntrenamiento" (click)="ocultarSeccion()">
           <li class="li">ENTRENAMIENTO</li>
           <img src="../../assets/iconosDeportes/entrenamiento.png" alt="iconoEntrenamiento">
-      </a>
-      <a class="a" routerLink="/seccionModa" (click)="ocultarSeccion()">
+        </a>
+        <a class="a" routerLink="/seccionModa" (click)="ocultarSeccion()">
           <li class="li">MODA</li>
           <img src="../../assets/iconosDeportes/moda.png" alt="iconoModa">
       </a>
@@ -68,9 +70,10 @@
           <li class="li">BASQUET</li>
           <img src="../../assets/iconosDeportes/basquet.png" alt="iconoBasquet">
       </a>
-     </ul>
+    </ul>
   </div>
 </div>
 <app-seccion-futbol *ngIf="seccionFutbolActiva"></app-seccion-futbol>
 <router-outlet></router-outlet>
 <app-btn-ver-mas></app-btn-ver-mas>
+</div>

@@ -1,59 +1,15 @@
 <div class="contenedor">
    <ul>
-    <div class="producto">
+    <div class="producto" *ngFor="let producto of productos">
         <a href="">
             <div class="card" style="width: 15rem;">
-                <img src="../../assets/ProductosFutbol/botin f5 topper.jpg" class="card-img-top" alt="...">
+                <img [src]="producto.imagen" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Botin F5 Topper</p>
-                  <p class="precio">$70.000</p>
+                  <p class="card-text">{{producto.nombre}}</p>
+                  <p class="precio">${{producto.precio}}</p>
                 </div>
               </div>
         </a>
     </div>
-    <div class="producto">
-        <a href="">
-            <div class="card" style="width: 15rem;">
-                <img src="../../assets/ProductosFutbol/botin nike legend.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Botin Nike Legend</p>
-                  <p class="precio">$85.000</p>
-                </div>
-              </div>
-        </a>
-    </div>
-    <div class="producto">
-        <a href="">
-            <div class="card" style="width: 15rem;">
-                <img src="../../assets/ProductosFutbol/botin reebok.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Botin Futbol Reebok</p>
-                  <p class="precio">$75.000</p>
-                </div>
-              </div>
-        </a>
-    </div>
-    <div class="producto">
-        <a href="">
-            <div class="card" style="width: 15rem;">
-                <img src="../../assets/ProductosFutbol/guante blanco reebok.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Guantes de arquero Reebok</p>
-                  <p class="precio">$55.000</p>
-                </div>
-              </div>
-        </a>
-    </div>
-    <div class="producto">
-      <a href="">
-          <div class="card" style="width: 15rem;">
-              <img src="../../assets/ProductosFutbol/guantes de arquero reebok.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Guantes de arquero Reebok</p>
-                <p class="precio">$55.000</p>
-              </div>
-            </div>
-      </a>
-  </div>
    </ul>
 </div>

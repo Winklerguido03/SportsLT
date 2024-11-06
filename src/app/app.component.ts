@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NavigationEnd, NavigationStart, RouterOutlet } from '@angular/router';
 import { EncabezadoComponent } from "./components/encabezado/encabezado.component";
 import { PrincipalComponent } from "./components/principal/principal.component";
 import { FooterComponent } from "./components/footer/footer.component";
@@ -18,5 +18,5 @@ import { BtnVerMasComponent } from "./components/btn-ver-mas/btn-ver-mas.compone
 export class AppComponent {
   title = 'ProyectoProgramacion';
 
-
+ 
 }

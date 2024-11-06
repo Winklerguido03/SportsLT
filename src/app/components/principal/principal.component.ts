@@ -4,11 +4,12 @@ import { RouterLink } from '@angular/router';
 import { BtnVerMasComponent } from "../btn-ver-mas/btn-ver-mas.component";
 import { SeccionFutbolComponent } from "../seccion-futbol/seccion-futbol.component";
 import { RouterOutlet } from '@angular/router';
+import { SeccionRunningComponent } from '../seccion-running/seccion-running.component';
 
 @Component({
   selector: 'app-principal',
   standalone: true,
-  imports: [CommonModule, RouterLink, BtnVerMasComponent, SeccionFutbolComponent,RouterOutlet],
+  imports: [CommonModule, RouterLink, BtnVerMasComponent, SeccionFutbolComponent,RouterOutlet,SeccionRunningComponent],
   templateUrl: './principal.component.html',
   styleUrl: './principal.component.css',
 })
@@ -29,5 +30,13 @@ export class PrincipalComponent{
   ocultarSeccion() {
     this.seccionFutbolActiva = false;
   }
+
+  principalActiva:boolean=true;
+  running:boolean=false;
+
+  ocultarPrincipal(){
+    this.principalActiva=false;
+  }
+
 }
 
