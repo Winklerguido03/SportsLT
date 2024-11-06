@@ -1,9 +1,9 @@
 <div class="contenedor">
     <ul>
-     <div class="producto" *ngFor="let producto of productos">
+     <div class="producto" *ngFor="let producto of listaProductos">
          <a href="">
              <div class="card" style="width: 15rem;">
-                 <img [src]="producto.imagen" class="card-img-top" alt="...">
+                 <img [src]="producto.imagen.url" class="card-img-top" alt="...">
                  <div class="card-body">
                    <p class="card-text">{{producto.nombre}}</p>
                    <p class="precio">${{producto.precio}}</p>

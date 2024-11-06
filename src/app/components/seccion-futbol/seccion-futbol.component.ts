@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Producto } from '../../modelos/producto';
 import { CommonModule } from '@angular/common';
+import { InfoProductosService } from '../../servicios/info-productos.service';
 
 @Component({
   selector: 'app-seccion-futbol',
@@ -11,32 +12,26 @@ import { CommonModule } from '@angular/common';
 })
 export class SeccionFutbolComponent{
 
-  productos:Producto[] = [
-    {
-      nombre: 'Botin F5 Topper',
-      precio: 70000,
-      imagen: '../../assets/ProductosFutbol/botin f5 topper.jpg',
+listaProductos : Producto [] = []
+
+constructor(private svcProducto: InfoProductosService){}
+
+ngOnInit(): void {
+  this.cargarProductos();
+}
+
+cargarProductos(): void {
+  this.svcProducto.getProductosFutbol().subscribe({
+    next: (data) => {
+      this.listaProductos = data;
+      console.log(JSON.stringify( this.listaProductos));
     },
-    {
-      nombre: 'Botin Nike Legend',
-      precio: 85000,
-      imagen: '../../assets/ProductosFutbol/botin nike legend.jpg',
-    },
-    {
-      nombre: 'Botin Futbol Reebok',
-      precio: 75000,
-      imagen: '../../assets/ProductosFutbol/botin reebok.jpg',
-    },
-    {
-      nombre: 'Guantes de arquero Reebok',
-      precio: 55000,
-      imagen: '../../assets/ProductosFutbol/guante blanco reebok.jpg',
-    },
-    {
-      nombre: 'Guantes de arquero Reebok',
-      precio: 55000,
-      imagen: '../../assets/ProductosFutbol/guantes de arquero reebok.jpg',
+    error: (error)=>{
+      console.error('Error al cargar la info de futbol', error);
     }
-  ];
+
+  })
+
+}
 
 }

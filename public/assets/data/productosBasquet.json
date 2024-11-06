@@ -1,0 +1,42 @@
+[
+    {
+        "nombre": "Camiseta de Boca",
+        "imagen":{
+            "url": "assets/img/ProductosBasquet/camisetaBoca.jpg",
+            "alt": "Camiseta de Boca"
+        },
+        "precio": 40000
+    },
+    {
+        "nombre": "Camiseta de river",
+        "imagen": {
+            "url": "assets/img/ProductosBasquet/camisetaRiver.jpg",
+            "alt": "Camiseta de river"
+        },
+        "precio": 40000
+    },
+    {
+        "nombre": "Camiseta River 2",
+        "imagen": {
+            "url": "assets/img/ProductosBasquet/camisetaRiver2.jpg",
+            "alt": "Camiseta River 2"
+        },
+        "precio": 40000
+    },
+    {
+        "nombre": "Zapas Basquet Topper",
+        "imagen": {
+            "url": "assets/img/ProductosBasquet/zapas basquet topper.jpg",
+            "alt": "Zapas Basquet Topper"
+        },
+        "precio": 125000
+    },
+    {
+        "nombre": "Zapas Basquet",
+        "imagen": {
+            "url": "assets/img/ProductosBasquet/zapas basquet.jpg",
+            "alt": "Zapas Basquet"
+        },
+        "precio": 115000
+    }
+  ]

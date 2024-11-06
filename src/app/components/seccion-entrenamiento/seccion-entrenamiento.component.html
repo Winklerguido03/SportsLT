@@ -1,59 +1,13 @@
 <div class="contenedor">
     <ul>
-     <div class="producto">
+     <div class="producto" *ngFor="let producto of listaProductos">
          <a href="">
              <div class="card" style="width: 15rem;">
-                 <img src="../../../assets/ProductosEntrenamiento/campera rompeviento azul.jpg" class="card-img-top" alt="...">
+                 <img [src]="producto.imagen.url" class="card-img-top" alt="...">
                  <div class="card-body">
-                   <p class="card-text">Campera rompeviento</p>
-                   <p class="precio">$90.000</p>
+                   <p class="card-text">{{producto.nombre}}</p>
+                   <p class="precio">${{producto.precio}}</p>
                  </div>
                </div>
          </a>
      </div>
-     <div class="producto">
-         <a href="">
-             <div class="card" style="width: 15rem;">
-                 <img src="../../../assets/ProductosEntrenamiento/short entrenamiento rojo.jpg" class="card-img-top" alt="...">
-                 <div class="card-body">
-                   <p class="card-text">Short entrenamiento rojo</p>
-                   <p class="precio">$25.000</p>
-                 </div>
-               </div>
-         </a>
-     </div>
-     <div class="producto">
-         <a href="">
-             <div class="card" style="width: 15rem;">
-                 <img src="../../../assets/ProductosEntrenamiento/zapas entrenamiento puma celeste.jpg" class="card-img-top" alt="...">
-                 <div class="card-body">
-                   <p class="card-text">Zapas Puma Celeste</p>
-                   <p class="precio">$125.000</p>
-                 </div>
-               </div>
-         </a>
-     </div>
-     <div class="producto">
-         <a href="">
-             <div class="card" style="width: 15rem;">
-                 <img src="../../../assets/ProductosEntrenamiento/zapas entrenamiento puma.jpg" class="card-img-top" alt="...">
-                 <div class="card-body">
-                   <p class="card-text">Zapas Puma</p>
-                   <p class="precio">$130.000</p>
-                 </div>
-               </div>
-         </a>
-     </div>
-     <div class="producto">
-       <a href="">
-           <div class="card" style="width: 15rem;">
-               <img src="../../../assets/ProductosEntrenamiento/zapatillas entrenamiento head.jpg" class="card-img-top" alt="...">
-               <div class="card-body">
-                 <p class="card-text">Zapas Head</p>
-                 <p class="precio">$150.000</p>
-               </div>
-             </div>
-       </a>
-   </div>
-    </ul>
- </div>

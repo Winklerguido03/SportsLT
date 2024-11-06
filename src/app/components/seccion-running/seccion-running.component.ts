@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Producto } from '../../modelos/producto';
 import { CommonModule } from '@angular/common';
+import { InfoProductosService } from '../../servicios/info-productos.service';
 
 @Component({
   selector: 'app-seccion-running',
@@ -11,31 +12,26 @@ import { CommonModule } from '@angular/common';
 })
 export class SeccionRunningComponent {
 
-  productos:Producto[] = [
-    {
-      nombre: 'Remera Adidas',
-      precio: 40000,
-      imagen: '../../assets/ProductosRunning/remera.jpg',
-    },
-    {
-      nombre: 'Remera Blanca',
-      precio: 40000,
-      imagen: '../../assets/ProductosRunning/remera2.jpg',
-    },
-    {
-      nombre: 'Short Azul',
-      precio: 30000,
-      imagen: '../../assets/ProductosRunning/short.jpg',
-    },
-    {
-      nombre: 'Zapas Reebok',
-      precio: 125000,
-      imagen: '../../assets/ProductosRunning/zapas.jpg',
-    },
-    {
-      nombre: 'Zapas Reebok 2',
-      precio: 120000,
-      imagen: '../../assets/ProductosRunning/zapas2.jpg',
-    }
-  ];
+  listaProductos : Producto [] = []
+
+  constructor(private svcProducto: InfoProductosService){}
+  
+  ngOnInit(): void {
+    this.cargarProductos();
+  }
+  
+  cargarProductos(): void {
+    this.svcProducto.getProductosRunning().subscribe({
+      next: (data) => {
+        this.listaProductos = data;
+        console.log(JSON.stringify( this.listaProductos));
+      },
+      error: (error)=>{
+        console.error('Error al cargar la info de running', error);
+      }
+  
+    })
+  
+  }
+
 }

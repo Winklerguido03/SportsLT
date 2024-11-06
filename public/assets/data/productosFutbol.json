@@ -1,0 +1,42 @@
+[
+    {
+        "nombre": "Botin F5 Topper",
+        "imagen":{
+            "url": "assets/img/ProductosFutbol/botin f5 topper.jpg",
+            "alt": "Botin F5 Topper"
+        },
+        "precio": 70000
+    },
+    {
+        "nombre": "Botin Nike Legend",
+        "imagen": {
+            "url": "assets/img/ProductosFutbol/botin nike legend.jpg",
+            "alt": "Botin Nike Legend"
+        },
+        "precio": 85000
+    },
+    {
+        "nombre": "Botin Futbol Reebok",
+        "imagen": {
+            "url": "assets/img/ProductosFutbol/botin reebok.jpg",
+            "alt": "Botin Futbol Reebok"
+        },
+        "precio": 75000
+    },
+    {
+        "nombre": "Guantes blancos de arquero Reebok",
+        "imagen": {
+            "url": "assets/img/ProductosFutbol/guante blanco reebok.jpg",
+            "alt": "Guantes blancos de arquero Reebok"
+        },
+        "precio": 55000
+    },
+    {
+        "nombre": "Guantes de arquero Reebok",
+        "imagen": {
+            "url": "assets/img/ProductosFutbol/guantes de arquero reebok.jpg",
+            "alt": "Guantes de arquero Reebok"
+        },
+        "precio": 55000
+    }
+  ]

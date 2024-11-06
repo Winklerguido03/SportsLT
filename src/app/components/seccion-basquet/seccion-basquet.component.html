@@ -1,59 +1,15 @@
 <div class="contenedor">
-    <ul>
-     <div class="producto">
-         <a href="">
-             <div class="card" style="width: 15rem;">
-                 <img src="../../../assets/ProductosBasquet/camisetaBoca.jpg" class="card-img-top" alt="...">
-                 <div class="card-body">
-                   <p class="card-text">Camiseta Boca</p>
-                   <p class="precio">$60.000</p>
-                 </div>
-               </div>
-         </a>
-     </div>
-     <div class="producto">
-         <a href="">
-             <div class="card" style="width: 15rem;">
-                 <img src="../../../assets/ProductosBasquet/camisetaRiver.jpg" class="card-img-top" alt="...">
-                 <div class="card-body">
-                   <p class="card-text">Camiseta River 1</p>
-                   <p class="precio">$60.000</p>
-                 </div>
-               </div>
-         </a>
-     </div>
-     <div class="producto">
-         <a href="">
-             <div class="card" style="width: 15rem;">
-                 <img src="../../../assets/ProductosBasquet/camisetaRiver2.jpg" class="card-img-top" alt="...">
-                 <div class="card-body">
-                   <p class="card-text">Camiseta River 2</p>
-                   <p class="precio">$60.000</p>
-                 </div>
-               </div>
-         </a>
-     </div>
-     <div class="producto">
-         <a href="">
-             <div class="card" style="width: 15rem;">
-                 <img src="../../../assets/ProductosBasquet/zapas basquet topper.jpg" class="card-img-top" alt="...">
-                 <div class="card-body">
-                   <p class="card-text">Zapas Basquet Topper</p>
-                   <p class="precio">$130.000</p>
-                 </div>
-               </div>
-         </a>
-     </div>
-     <div class="producto">
+  <ul>
+   <div class="producto" *ngFor="let producto of listaProductos">
        <a href="">
            <div class="card" style="width: 15rem;">
-               <img src="../../../assets/ProductosBasquet/zapas basquet.jpg" class="card-img-top" alt="...">
+               <img [src]="producto.imagen.url" class="card-img-top" alt="...">
                <div class="card-body">
-                 <p class="card-text">Zapas Basquet</p>
-                 <p class="precio">$150.000</p>
+                 <p class="card-text">{{producto.nombre}}</p>
+                 <p class="precio">${{producto.precio}}</p>
                </div>
              </div>
        </a>
    </div>
-    </ul>
- </div>
+  </ul>
+</div>

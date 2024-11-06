@@ -1,0 +1,42 @@
+[
+    {
+        "nombre": "Campera rompeviento",
+        "imagen":{
+            "url": "assets/img/ProductosEntrenamiento/campera rompeviento azul.jpg",
+            "alt": "Campera rompeviento"
+        },
+        "precio": 90000
+    },
+    {
+        "nombre": "Short rojo de entrenamiento",
+        "imagen": {
+            "url": "assets/img/ProductosEntrenamiento/short entrenamiento rojo.jpg",
+            "alt": "Short rojo de entrenamiento"
+        },
+        "precio": 25000
+    },
+    {
+        "nombre": "Zapas Pumas Celeste",
+        "imagen": {
+            "url": "assets/img/ProductosEntrenamiento/zapas entrenamiento puma celeste.jpg",
+            "alt": "Zapas Pumas Celeste"
+        },
+        "precio": 130000
+    },
+    {
+        "nombre": "Zapas Puma",
+        "imagen": {
+            "url": "assets/img/ProductosEntrenamiento/zapas entrenamiento puma.jpg",
+            "alt": "Zapas Puma"
+        },
+        "precio": 125000
+    },
+    {
+        "nombre": "Zapas Head",
+        "imagen": {
+            "url": "assets/img/ProductosEntrenamiento/zapatillas entrenamiento head.jpg",
+            "alt": "Zapas Head"
+        },
+        "precio": 125000
+    }
+  ]

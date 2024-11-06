@@ -1,0 +1,42 @@
+[
+    {
+        "nombre": "Buzo Nike",
+        "imagen":{
+            "url": "assets/img/ProductosModa/buzo nike.jpg",
+            "alt": "Buzo Nike"
+        },
+        "precio": 80000
+    },
+    {
+        "nombre": "Campera verde Nike",
+        "imagen": {
+            "url": "assets/img/ProductosModa/campera verde nike.jpg",
+            "alt": "Campera verde Nike"
+        },
+        "precio": 90000
+    },
+    {
+        "nombre": "Crocs",
+        "imagen": {
+            "url": "assets/img/ProductosModa/crocs1.jpg",
+            "alt": "Crocs"
+        },
+        "precio": 30000
+    },
+    {
+        "nombre": "Zapas Botas Kappa",
+        "imagen": {
+            "url": "assets/img/ProductosModa/zapas botas kappas.jpg",
+            "alt": "Zapas Botas Kappa"
+        },
+        "precio": 125000
+    },
+    {
+        "nombre": "Zapas Addnice de niño",
+        "imagen": {
+            "url": "assets/img/ProductosModa/zapas niño addnice.jpg",
+            "alt": "Zapas Addnice de niño"
+        },
+        "precio": 80000
+    }
+  ]

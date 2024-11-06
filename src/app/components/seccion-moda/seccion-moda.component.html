@@ -1,59 +1,15 @@
 <div class="contenedor">
-    <ul>
-     <div class="producto">
-         <a href="">
-             <div class="card" style="width: 15rem;">
-                 <img src="../../../assets/ProductosModa/buzo nike.jpg" class="card-img-top" alt="...">
-                 <div class="card-body">
-                   <p class="card-text">Buzo Nike</p>
-                   <p class="precio">$80.000</p>
-                 </div>
-               </div>
-         </a>
-     </div>
-     <div class="producto">
-         <a href="">
-             <div class="card" style="width: 15rem;">
-                 <img src="../../../assets/ProductosModa/campera verde nike.jpg" class="card-img-top" alt="...">
-                 <div class="card-body">
-                   <p class="card-text">Campera verde Nike</p>
-                   <p class="precio">$90.000</p>
-                 </div>
-               </div>
-         </a>
-     </div>
-     <div class="producto">
-         <a href="">
-             <div class="card" style="width: 15rem;">
-                 <img src="../../../assets/ProductosModa/crocs1.jpg" class="card-img-top" alt="...">
-                 <div class="card-body">
-                   <p class="card-text">Crocs</p>
-                   <p class="precio">$25.000</p>
-                 </div>
-               </div>
-         </a>
-     </div>
-     <div class="producto">
-         <a href="">
-             <div class="card" style="width: 15rem;">
-                 <img src="../../../assets/ProductosModa/zapas botas kappas.jpg" class="card-img-top" alt="...">
-                 <div class="card-body">
-                   <p class="card-text">Zapas Botas Kappa</p>
-                   <p class="precio">$130.000</p>
-                 </div>
-               </div>
-         </a>
-     </div>
-     <div class="producto">
+  <ul>
+   <div class="producto" *ngFor="let producto of listaProductos">
        <a href="">
            <div class="card" style="width: 15rem;">
-               <img src="../../../assets/ProductosModa/zapas niño addnice.jpg" class="card-img-top" alt="...">
+               <img [src]="producto.imagen.url" class="card-img-top" alt="...">
                <div class="card-body">
-                 <p class="card-text">Zapas niño Addnice</p>
-                 <p class="precio">$80.000</p>
+                 <p class="card-text">{{producto.nombre}}</p>
+                 <p class="precio">${{producto.precio}}</p>
                </div>
              </div>
        </a>
    </div>
-    </ul>
- </div>
+  </ul>
+</div>

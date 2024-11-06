@@ -1,0 +1,42 @@
+[
+    {
+        "nombre": "Remera Adidas",
+        "imagen":{
+            "url": "assets/img/ProductosRunning/remera.jpg",
+            "alt": "Remera Adidas"
+        },
+        "precio": 40000
+    },
+    {
+        "nombre": "Remera Blanca",
+        "imagen": {
+            "url": "assets/img/ProductosRunning/remera2.jpg",
+            "alt": "Remera Blanca"
+        },
+        "precio": 40000
+    },
+    {
+        "nombre": "Short azul",
+        "imagen": {
+            "url": "assets/img/ProductosRunning/short.jpg",
+            "alt": "Short azul"
+        },
+        "precio": 30000
+    },
+    {
+        "nombre": "Zapas Reebok",
+        "imagen": {
+            "url": "assets/img/ProductosRunning/zapas.jpg",
+            "alt": "Zapas Reebok"
+        },
+        "precio": 125000
+    },
+    {
+        "nombre": "Zapas Reebok 2",
+        "imagen": {
+            "url": "assets/img/ProductosRunning/zapas2.jpg",
+            "alt": "Zapas Reebok 2"
+        },
+        "precio": 125000
+    }
+  ]
