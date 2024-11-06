@@ -1,0 +1,76 @@
+<div class="fondo">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <a class="imgCarrusel" href="">
+                <img src="../../assets/imgPrincipal/botines.jpg" class="imgCarrusel" alt="...">
+            </a>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <a class="imgCarrusel" href="">
+              <img src="../../assets/imgPrincipal/Puma.png" class="imgCarrusel" alt="...">
+            </a>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <a href="">
+                <img src="../../assets/imgPrincipal/run.jpg" class="imgCarrusel" alt="...">
+            </a>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <a href="">
+                <img src="../../assets/imgPrincipal/niños.jpg" class="imgCarrusel" alt="...">
+            </a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+<div class="contenedorMarcas"><!-- seccion marcas -->
+  <div class="tituloMarcas">
+    <h1>MARCAS</h1>
+  </div>
+  <div class="marcas">
+   <a class="aMarcas" *ngFor="let imagen of imagenes" href="">
+     <img  class="imgMarcas" [src]="imagen" [alt]="imagen">
+   </a>  
+  </div>
+</div>
+<div class="deportes"><!-- seccion deportes -->
+  <div class="tituloDeportes">
+    <h1 class="h1Deportes" >DEPORTES</h1>  
+  </div>
+  <div class="bloquesDeportes">
+     <ul class="btnDeportes">
+      <a class="a" href="" routerLink="/seccionFutbol" (click)="ocultarSeccion()">
+            <li class="li">FUTBOL</li>
+            <img src="../../assets/iconosDeportes/futbol.png" alt="iconoFutbol">   
+      </a>
+      <a class="a" routerLink="/seccionRunning" (click)="ocultarSeccion()">
+          <li class="li">RUNNING</li>
+          <img src="../../assets/iconosDeportes/running.png" alt="iconoRunning" >
+      </a>
+      <a class="a" routerLink="/seccionEntrenamiento" (click)="ocultarSeccion()">
+          <li class="li">ENTRENAMIENTO</li>
+          <img src="../../assets/iconosDeportes/entrenamiento.png" alt="iconoEntrenamiento">
+      </a>
+      <a class="a" routerLink="/seccionModa" (click)="ocultarSeccion()">
+          <li class="li">MODA</li>
+          <img src="../../assets/iconosDeportes/moda.png" alt="iconoModa">
+      </a>
+      <a class="a" routerLink="/seccionBasquet" (click)="ocultarSeccion()">
+          <li class="li">BASQUET</li>
+          <img src="../../assets/iconosDeportes/basquet.png" alt="iconoBasquet">
+      </a>
+     </ul>
+  </div>
+</div>
+<app-seccion-futbol *ngIf="seccionFutbolActiva"></app-seccion-futbol>
+<router-outlet></router-outlet>
+<app-btn-ver-mas></app-btn-ver-mas>

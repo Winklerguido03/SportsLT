@@ -1,0 +1,57 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ .titulo{
+     margin: 0px 0px 0px 100px;
+ }
+
+ .title{
+    text-decoration: none;
+    font-family: Impact;
+    font-size: 50px;
+    position: relative;
+    top: 25px;
+    color: black;
+    padding-right: 0px;
+    margin-left: 100px;
+ }
+ 
+ nav {
+ background-color: rgb(22, 22, 22);
+ padding: 5px 0px 5px 0px;
+ width: 100%;
+ margin: 0px;
+ }
+ 
+ nav a{
+     padding:5px 30px 5px 30px;
+     text-decoration: none;
+     color:rgb(255, 255, 255);
+ }
+ 
+ .uno{
+     margin-left: 80px;
+ }
+ 
+ nav a:hover{
+     background-color: white;
+     color: black;
+ }
+ 
+ .buscador{
+    margin-left:auto;
+ }
+ 
+ .buscador button{
+     color: white;
+     border-color: black;
+     background-color: black;
+ }
+ 
+ #btn:hover{
+     color: black;
+     background-color: white;
+ }
+ 

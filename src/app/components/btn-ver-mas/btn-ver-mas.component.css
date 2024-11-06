@@ -1,0 +1,11 @@
+.contenedor{
+    background-color: rgb(240, 240, 240);
+    padding: 8px 0px 20px 0px;
+    text-align: center;
+}
+
+button{
+    padding: 8px;
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
